@@ -1,9 +1,9 @@
 <html>
-<head>
+	<head>
 		<title> Mapas websig Covid-19 </title>
-</head>
+	</head>
 
-<body>		
+	<body>		
 		<iframe src="mapa.html" title="mapa 1"></iframe>
 		
 		<iframe src=": endrereço pag github" title="W3Schools Free Online Web Tutorials"></iframe>
@@ -12,5 +12,5 @@
 		
 		<iframe src=": endrereço pag github" title="W3Schools Free Online Web Tutorials"></iframe>
 		
-		</body>
-		</html>
+	</body>
+</html>
