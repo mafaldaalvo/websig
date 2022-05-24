@@ -246,47 +246,6 @@
 		}).addTo(map);
 		
 		
-				L.geoJson(casos, {
-			filter: function (feature) {
-				if (feature.properties. Casos_24_1) { // This test to see if the key exits
-					return feature;
-				}
-			},
-			pointToLayer: function (feature, latlng) {
-				return L.circleMarker(latlng, {
-					color: 'darkblue',
-					weight: 1,
-					fillColor: 'blue',
-					fillOpacity: 0.3,
-					radius: getRadius(feature.properties. Casos_24_1)
-				});
-			},
-			onEachFeature: function (feature, layer) {
-				var popup =
-					//'<p><b>' + layer.feature.properties.Casos_24_1 + '</b></p>' +
-					'<p><b> capacity: ' + layer.feature.properties.Concelho + '</b></p>' +
-					'<p>Hydro: ' + layer.feature.properties.Casos_24_1 +'</p>'
-
-				layer.on('mouseover', function () {
-					layer.bindPopup(popup).openPopup();
-					layer.setStyle({
-						fillColor: 'yellow',
-						fillOpacity: 1
-					});
-				});
-
-				layer.on('mouseout', function () {
-					layer.setStyle({
-						fillColor: 'blue',
-						fillOpacity: 0.3
-					});
-					layer.bindPopup(popup).closePopup();
-				})
-
-			}
-		}).addTo(map);
-		
-		
 		function getRadius(area) {
 			var radius = Math.sqrt(area / Math.PI);
 			return radius * 2.6;
