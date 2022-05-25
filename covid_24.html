@@ -158,9 +158,7 @@
 		}
 	</style>
 </head>
-
 <body>
-
 	<header>
 		<h1>Casos covid-19 24 Janeiro </h1>
 	</header>
@@ -168,8 +166,6 @@
 		<div class="row">
 			<div id="map"></div>
 	</section>
-	
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
 	<script src="17/casos.geojson"></script>
 	
@@ -198,7 +194,7 @@
 		var tiles = L.tileLayer(basemap_source, basemap_options).addTo(map);
 
 		casos.features.sort(function (a, b) {
-			return b.properties.Casos_24_1 - a.properties. Casos_24_1;
+			return b.properties.Casos_24_1 - a.properties.Casos_24_1;
 		});
 
 
@@ -208,7 +204,7 @@
 	
 				L.geoJson(casos, {
 			filter: function (feature) {
-				if (feature.properties. Casos_24_1) { // This test to see if the key exits
+				if (feature.properties.Casos_24_1) { // This test to see if the key exits
 					return feature;
 				}
 			},
@@ -218,7 +214,7 @@
 					weight: 1,
 					fillColor: 'blue',
 					fillOpacity: 0.3,
-					radius: getRadius(feature.properties. Casos_24_1)
+					radius: getRadius(feature.properties.Casos_24_1)
 				});
 			},
 			onEachFeature: function (feature, layer) {
