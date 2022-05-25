@@ -197,7 +197,7 @@
 		// request some basemap tiles and add to the map
 		var tiles = L.tileLayer(basemap_source, basemap_options).addTo(map);
 
-		casos.features.sort(function (a, b) {
+		casosdia.features.sort(function (a, b) {
 			return b.properties.Casos_23_1 - a.properties. Casos_23_1;
 		});
 
@@ -207,7 +207,7 @@
 		// Load power plants
 		L.geoJson(casosdia, {
 			filter: function (feature) {
-				if (feature.properties. Casos_23_1) { // This test to see if the key exits
+				if (feature.properties.casos_23_1) { // This test to see if the key exits
 					return feature;
 				}
 			},
@@ -217,7 +217,7 @@
 					weight: 1,
 					fillColor: 'blue',
 					fillOpacity: 0.3,
-					radius: getRadius(feature.properties. Casos_23_1)
+					radius: getRadius(feature.properties.casos_23_1)
 				});
 			},
 			onEachFeature: function (feature, layer) {
