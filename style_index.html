@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+<title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<link rel="shortcut icon" href="{Favicon}">
+
+{block:hidden}
+<meta name="image:Background" content=""/>
+<meta name="image:Logo" content=""/>
+
+<meta name="color:Background" content="#dfdfdf"/>
+<meta name="color:Front Background" content="#ffffff"/>
+<meta name="color:Dividers" content="#cfcfcf"/>
+<meta name="color:Body Titles" content="#333333"/>
+<meta name="color:Body Text" content="#777777"/>
+<meta name="color:Post Links" content="#9d8e30"/>
+<meta name="color:Post Information" content="#cccccc"/>
+<meta name="color:Post Information Hover" content="#777777"/>
+<meta name="color:Photo Overlay" content="#000000"/>
+<meta name="color:Photo Overlay Buttons" content="#ffffff"/>
+
+<meta name="if:Fullscreen Background" content="0"/>
+<meta name="if:Floating Particles" content="0"/>
+<meta name="if:Sidebar Blog Title" content="1"/>
+<meta name="if:Uppercase Sidebar Blog Title" content="1"/>
+<meta name="if:Uppercase Sidebar Navigation Links" content="1"/>
+<meta name="if:Show Archive Link" content="1"/>
+<meta name="if:Show Random Link" content="1"/>
+<meta name="if:Show RSS Link" content="1"/>
+<meta name="if:Show Credit" content="1"/>
+<meta name="if:Show Filter List" content="0"/>
+<meta name="if:Photo Hover Effect 1" content="1"/>
+<meta name="if:Photo Hover Effect 2" content="0"/>
+<meta name="if:Photo Hover Effect 3" content="0"/>
+<meta name="if:Hide Post Notes" content="0"/>
+<meta name="if:Infinite Scrolling" content="1"/>
+
+<meta name="select:Sidebar Position" content="left" title="Left">
+<meta name="select:Sidebar Position" content="right" title="Right">
+<meta name="select:Columns" content="c-3" title="3 Columns">
+<meta name="select:Columns" content="c-2" title="2 Columns">
+
+<meta name="select:Container Transparency" content="7" title="Default">
+<meta name="select:Container Transparency" content="99" title="100%">
+<meta name="select:Container Transparency" content="9" title="90%">
+<meta name="select:Container Transparency" content="8" title="80%">
+<meta name="select:Container Transparency" content="7" title="70%">
+
+<meta name="select:Photo Overlay Transparency" content="7" title="70%">
+<meta name="select:Photo Overlay Transparency" content="99" title="100%">
+<meta name="select:Photo Overlay Transparency" content="9" title="90%">
+<meta name="select:Photo Overlay Transparency" content="8" title="70%">
+<meta name="select:Photo Overlay Transparency" content="7" title="70%">
+<meta name="select:Photo Overlay Transparency" content="6" title="60%">
+<meta name="select:Photo Overlay Transparency" content="5" title="50%">
+<meta name="select:Photo Overlay Transparency" content="4" title="40%">
+<meta name="select:Photo Overlay Transparency" content="3" title="30%">
+<meta name="select:Photo Overlay Transparency" content="2" title="20%">
+<meta name="select:Photo Overlay Transparency" content="1" title="10%">
+<meta name="select:Photo Overlay Transparency" content="0" title="0%">
+
+<meta name="select:Title Font" content="Helvetica Neue" title="Helvetica Neue"/><meta name="select:Title Font" content="Arial" title="Arial"/><meta name="select:Title Font" content="Arvo" title="Arvo"/><meta name="select:Title Font" content="Abel" title="Abel"/><meta name="select:Title Font" content="Bitter" title="Bitter"/><meta name="select:Title Font" content="courier new" title="Courier"/><meta name="select:Title Font" content="Domine" title="Domine"/><meta name="select:Title Font" content="Droid Sans" title="Droid Sans"/><meta name="select:Title Font" content="Droid Serif" title="Droid Serif"/><meta name="select:Title Font" content="Georgia" title="Georgia"/><meta name="select:Title Font" content="Helvetica" title="Helvetica"/><meta name="select:Title Font" content="Karla" Title="Karla"/><meta name="select:Title Font" content="Lato" title="Lato"/><meta name="select:Title Font" content="Libre Baskerville" title="Libre Baskerville"/><meta name="select:Title Font" content="Lora" title="Lora"/><meta name="select:Title Font" content="Mako" title="Mako"/><meta name="select:Title Font" content="Merriweather" title="Merriweather"/><meta name="select:Title Font" content="Muli" title="Muli"/><meta name="select:Title Font" content="Montserrat" title="Montserrat"/><meta name="select:Title Font" content="Noto Sans" title="Noto Sans"/><meta name="select:Title Font" content="Playfair Display" title="Playfair Display"/><meta name="select:Title Font" content="PT Mono" title="PT Mono"/><meta name="select:Title Font" content="PT Serif" title="PT Serif"/><meta name="select:Title Font" content="Raleway" title="Raleway"/><meta name="select:Title Font" content="Roboto Slab" title="Roboto Slab"/><meta name="select:Title Font" content="Ropa Sans" title="Ropa Sans"/><meta name="select:Title Font" content="Rokkitt" title="Rokkitt"/><meta name="select:Title Font" content="Signika" title="Signika"/><meta name="select:Title Font" content="Source Sans Pro" title="Source Sans Pro"/><meta name="select:Title Font" content="Times New Roman" title="Times New Roman"/><meta name="select:Title Font" content="Questrial" title="Questrial"/><meta name="select:Body Font" content="Helvetica Neue" title="Helvetica Neue"/><meta name="select:Body Font" content="Arial" title="Arial"/><meta name="select:Body Font" content="Arvo" title="Arvo"/><meta name="select:Body Font" content="Bitter" title="Bitter"/><meta name="select:Body Font" content="Abel" title="Abel"/><meta name="select:Body Font" content="courier new" title="Courier"/><meta name="select:Body Font" content="Domine" title="Domine"/><meta name="select:Body Font" content="Droid Sans" title="Droid Sans"/><meta name="select:Body Font" content="Droid Serif" title="Droid Serif"/><meta name="select:Body Font" content="Georgia" title="Georgia"/><meta name="select:Body Font" content="Helvetica" title="Helvetica"/><meta name="select:Body Font" content="Karla" Title="Karla"/><meta name="select:Body Font" content="Lato" title="Lato"/><meta name="select:Body Font" content="Libre Baskerville" title="Libre Baskerville"/><meta name="select:Body Font" content="Lora" title="Lora"/><meta name="select:Body Font" content="Mako" title="Mako"/><meta name="select:Body Font" content="Merriweather" title="Merriweather"/><meta name="select:Body Font" content="Muli" title="Muli"/><meta name="select:Body Font" content="Noto Sans" title="Noto Sans"/><meta name="select:Body Font" content="PT Mono" title="PT Mono"/><meta name="select:Body Font" content="Raleway" title="Raleway"/><meta name="select:Body Font" content="Roboto Slab" title="Roboto Slab"/><meta name="select:Body Font" content="Rokkitt" title="Rokkitt"/><meta name="select:Body Font" content="Ropa Sans" title="Ropa Sans"/><meta name="select:Body Font" content="Source Sans Pro" title="Source Sans Pro"/><meta name="select:Body Font" content="Playfair Display" title="Playfair Display"/><meta name="select:Body Font" content="PT Serif" title="PT Serif"/><meta name="select:Body Font" content="Signika" title="Signika"/><meta name="select:Body Font" content="Times New Roman" title="Times New Roman"/><meta name="select:Body Font" content="Questrial" title="Questrial"/>
+
+<meta name="text:Ask Link Title" content="Ask"/>
+<meta name="text:Submit Link Title" content="Submit"/>
+<meta name="text:Archive Link Title" content="Archive"/>
+<meta name="text:Custom Link 1" content=""/>
+<meta name="text:Custom Link 1 Title" content=""/>
+<meta name="text:Custom Link 2" content=""/>
+<meta name="text:Custom Link 2 Title" content=""/>
+<meta name="text:Custom Link 3" content=""/>
+<meta name="text:Custom Link 3 Title" content=""/>
+<meta name="text:Custom Link 4" content=""/>
+<meta name="text:Custom Link 4 Title" content=""/>
+<meta name="text:Custom Link 5" content=""/>
+<meta name="text:Custom Link 5 Title" content=""/>
+<meta name="text:Instagram URL" content="">
+<meta name="text:Facebook URL" content="">
+<meta name="text:Twitter URL" content="">
+<meta name="text:Dribbble URL" content="">
+<meta name="text:Behance URL" content="">
+<meta name="text:Linkedin URL" content="">
+<meta name="text:Tumblr URL" content="">
+<meta name="text:Wordpress URL" content="">
+<meta name="text:Soundcloud URL" content="">
+<meta name="text:Pinterest URL" content="">
+<meta name="text:Youtube URL" content="">
+<meta name="text:Flickr URL" content="">
+<meta name="text:Vimeo URL" content="">
+<meta name="text:Filter 1 Tag" content=""/>
+<meta name="text:Filter 1 Title" content=""/>
+<meta name="text:Filter 2 Tag" content=""/>
+<meta name="text:Filter 2 Title" content=""/>
+<meta name="text:Filter 3 Tag" content=""/>
+<meta name="text:Filter 3 Title" content=""/>
+<meta name="text:Filter 4 Tag" content=""/>
+<meta name="text:Filter 4 Title" content=""/>
+<meta name="text:Filter 5 Tag" content=""/>
+<meta name="text:Filter 5 Title" content=""/>
+<meta name="text:Filter 6 Tag" content=""/>
+<meta name="text:Filter 6 Title" content=""/>
+<meta name="text:Filter 7 Tag" content=""/>
+<meta name="text:Filter 7 Title" content=""/>
+<meta name="text:Filter 8 Tag" content=""/>
+<meta name="text:Filter 8 Title" content=""/>
+<meta name="text:Filter 9 Tag" content=""/>
+<meta name="text:Filter 9 Title" content=""/>
+<meta name="text:Custom Credit Text" content=""/>
+{/block:hidden}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family={select:Title Font}:400,700"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family={select:Body Font}:400,400italic,700,700italic"><link href="https://static.tumblr.com/j6tha7z/8PPok4buz/s.css" rel="stylesheet" type="text/css"><style type="text/css">body{font:12px/1.8em "{select:Body Font}",sans-serif;color:{color:Body Text};background:url("{image:background}") {block:ifnotfullscreenbackground}{block:iffloatingParticles}fixed {/block:iffloatingParticles}{/block:ifnotfullscreenbackground}{block:iffullscreenbackground}fixed center no-{/block:iffullscreenbackground}repeat {color:Background};{block:iffullscreenbackground}-webkit-background-size:cover;background-size:cover{/block:iffullscreenbackground}}a{color:{color:Post Links}}a:hover{color:{color:Post Links Hover}}h1,h2,h3,h4,h5{font:700 14px/1.8em "{select:Title Font}",sans-serif}color:{color:Body Titles}}#color_sample{background:{color:Front Background} !important}#C{background:rgba({RGBcolor:Front Background},.{select:Container Transparency});box-shadow:inset 1px 1px rgba({RGBcolor:Dividers},.2{select:Container Transparency}),1px 0 rgba({RGBcolor:Dividers},.2{select:Container Transparency})}#B,#Z-C,#PG{padding:30px 0;box-shadow:inset 1px 1px rgba({RGBcolor:Dividers},.2{select:Container Transparency}),1px 0 rgba({RGBcolor:Dividers},.2{select:Container Transparency})}#B #SC{display:none;{block:ifinstagramURL}display:block;{/block:ifinstagramURL}{block:ifFacebookURL}display:block;{/block:ifFacebookURL}{block:ifTwitterURL}display:block;{/block:ifTwitterURL}{block:ifDribbbleURL}display:block;{/block:ifDribbbleURL}{block:ifBehanceURL}display:block;{/block:ifBehanceURL}{block:ifLinkedInURL}display:block;{/block:ifLinkedInURL}{block:ifTumblrURL}display:block;{/block:ifTumblrURL}{block:ifWordpressURL}display:block;{/block:ifWordpressURL}{block:ifSoundcloudURL}display:block;{/block:ifSoundcloudURL}{block:ifPinterestURL}display:block;{/block:ifPinterestURL}{block:ifFlickrURL}display:block;{/block:ifFlickrURL}{block:ifYoutubeURL}display:block;{/block:ifYoutubeURL}{block:ifVimeoURL}display:block;{/block:ifVimeoURL}}#B #cl{display:none;{block:ifinstagramURL}display:inline-block;{/block:ifinstagramURL}{block:ifFacebookURL}display:inline-block;{/block:ifFacebookURL}{block:ifTwitterURL}display:inline-block;{/block:ifTwitterURL}{block:ifDribbbleURL}display:inline-block;{/block:ifDribbbleURL}{block:ifBehanceURL}display:inline-block;{/block:ifBehanceURL}{block:ifLinkedInURL}display:inline-block;{/block:ifLinkedInURL}{block:ifTumblrURL}display:inline-block;{/block:ifTumblrURL}{block:ifWordpressURL}display:inline-block;{/block:ifWordpressURL}{block:ifSoundcloudURL}display:inline-block;{/block:ifSoundcloudURL}{block:ifPinterestURL}display:inline-block;{/block:ifPinterestURL}{block:ifFlickrURL}display:inline-block;{/block:ifFlickrURL}{block:ifYoutubeURL}display:inline-block;{/block:ifYoutubeURL}{block:ifVimeoURL}display:inline-block;{/block:ifVimeoURL}}#B #D,#B #D a{color:{color:Body Text}} #B #CT,#B #CT a{color:rgba({RGBcolor:Body Text},.7) } #B section{border-bottom:1px solid rgba({RGBcolor:Dividers},.2{select:Container Transparency}) } #B h2{font:700 12px/30px "{select:Title Font}",sans-serif;color:{color:Body Titles}}#B h1{margin:{block:iflogoimage}15px 0{/block:iflogoimage} 0} #B h1 a{{block:ifuppercasesidebarblogtitle}text-transform:uppercase; letter-spacing:2px;{/block:ifuppercasesidebarblogtitle}font:700 20px/1.2em "{select:Title Font}",sans-serif; color:{color:Body Titles}} #B #tb #cl a{color:{color:Body Titles}} #B #D,#B #tb #cl a,#B nav li a,#B a#T,.X .t,#P #p-i{background:rgba({RGBcolor:Front Background},1); box-shadow:inset 1px 1px rgba({rgbcolor:Dividers},.2{select:Container Transparency}),1px 1px rgba({rgbcolor:Dividers},.2{select:Container Transparency}) } #B nav li a,#B a#T{{block:ifuppercasesidebarnavigationlinks}text-transform:uppercase; letter-spacing:1px;{/block:ifuppercasesidebarnavigationlinks}font:700 12px/40px "{select:Title Font}",sans-serif; color:{color:Body Titles}} #B #tb #cl a:hover,#B nav li a:hover,#B a#T:hover{background:rgba({RGBcolor:Front Background},.4) } .X .p a.G{background:{color:Photo Overlay}} .X .p:hover a.G{opacity:.{select:Photo Overlay Transparency}} .X .p .h_3 li i{color:{color:Photo Overlay Buttons}}.X .p .h_1 a,.X .p .h_2 a,.X .p .h_3 li a{color:{color:Photo Overlay Buttons}; box-shadow:inset 1px 1px rgba({rgbcolor:Photo Overlay Buttons},.2),1px 1px rgba({rgbcolor:Photo Overlay Buttons},.2); background:rgba({rgbcolor:Photo Overlay},.4) } .X .p .h_1 a:hover,.X .p .h_2 a:hover,.X .p .h_3 li a:hover{background:rgba({RGBcolor:Photo Overlay},1) } .X{background:rgba({RGBcolor:Front Background},1) }blockquote{margin:0;padding:5px 15px;box-shadow:inset 0 0 0 1px rgba({rgbcolor:Dividers},.2{select:Container Transparency})}.X .t .t-q,.X .t.t-c li{border-bottom:1px solid rgba({RGBcolor:Dividers},.2{select:Container Transparency}) } .X .t.t-l h2 a{color:{color:Body Titles}; box-shadow:inset 0 0 0 1px rgba({rgbcolor:Dividers},.2{select:Container Transparency}) } .X .d a{color:rgba({RGBcolor:Body Text},.4); box-shadow:inset 1px 1px rgba({rgbcolor:Dividers},.2{select:Container Transparency}),1px 1px rgba({rgbcolor:Dividers},.2{select:Container Transparency}) } .X .d a:hover{color:rgba({RGBcolor:Body Text},.7) } #PG a{font:700 12px/40px "{select:Title Font}",sans-serif;color:{color:Body Titles}; background:rgba({rgbcolor:Front Background},1); box-shadow:inset 1px 1px rgba({rgbcolor:Dividers},.2{select:Container Transparency}),1px 1px rgba({rgbcolor:Dividers},.2{select:Container Transparency}) } #PG a#current,#PG a:hover{background:rgba({RGBcolor:Front Background},.4)}#PG #L > div{background:{color:Body Titles}}#P .d a.n-i{-webkit-transform:translateY(-1px);transform:tralsateY(-1px);text-transform:uppercase !important;font:700 11px/50px "{select:Title Font}",sans-serif !important;cursor:text}#P #p-i ol.notes li.more_notes_link_container a{font:700 11px/35px "{select:Title Font}",sans-serif;color:{color:Body Titles};box-shadow:inset 0 0 0 1px{color:Dividers}}{block:ifinfinitescrolling}#PG{box-shadow:none !important}#PG nav{height:0;overflow:hidden;opacity:0;pointer-events:none}{/block:ifinfinitescrolling}{CustomCSS}</style></head>
+
+<body id="{block:IndexPage}I{/block:IndexPage}{block:permalinkpage}P{/block:permalinkpage}" class="{select:Sidebar Position} {select:Columns}{block:ifinfinitescrolling} infinite_scrolling{/block:ifinfinitescrolling}">
+
+<div id="color_sample"></div><div id="JS-P" class="{block:ifnotfloatingparticles}hide{block:ifnotfloatingparticles}"></div>
+
+<div id="filter_style"></div>
+
+<div id="C">
+<aside id="B" class="LS"><div id="cn" class="hide"><section id="N"><div id="tb"><h2>Navigation</h2><div id="cl"><a id="C-LS">,</a><a id="C-SC">.</a></div></div><nav id="LS">{block:AskEnabled}<li><a href="/ask">{text:Ask Link Title}</a></li>{/block:AskEnabled}{block:SubmissionsEnabled}<li><a href="/submit">{text:Submit Link Title}</a></li>{/block:SubmissionsEnabled}{block:ifshowarchivelink}<li><a href="/archive">{text:Archive Link Title}</a></li>{/block:ifshowarchivelink}{block:ifshowrandomlink}<li><a href="/random">Random</a></li>{/block:ifshowrandomlink}{block:ifshowrsslink}<li><a href="{RSS}">RSS</a></li>{/block:ifshowrsslink}{block:HasPages}{block:Pages}<li><a href="{URL}" title="{Label}">{Label}</a></li>{/block:Pages}{/block:HasPages}{block:ifCustomLink1Title}<li><a href="{text:Custom Link 1}">{text:Custom Link 1 Title}</a></li>{/block:ifCustomLink1Title}{block:ifCustomLink2Title}<li><a href="{text:Custom Link 2}">{text:Custom Link 2 Title}</a></li>{/block:ifCustomLink2Title}{block:ifCustomLink3Title}<li><a href="{text:Custom Link 3}">{text:Custom Link 3 Title}</a></li>{/block:ifCustomLink3Title}{block:ifCustomLink4Title}<li><a href="{text:Custom Link 4}">{text:Custom Link 4 Title}</a></li>{/block:ifCustomLink4Title}{block:ifCustomLink5Title}<li><a href="{text:Custom Link 5}">{text:Custom Link 5 Title}</a></li>{/block:ifCustomLink5Title}</nav><nav id="SC">{block:ifinstagramURL}<li><a class="instagram" href="{text:Instagram URL}" title="Instagram">Instagram</a></li>{/block:ifinstagramURL}{block:ifFacebookURL}<li><a class="facebook" href="{text:Facebook URL}" title="Facebook">Facebook</a></li>{/block:ifFacebookURL}{block:ifTwitterURL}<li><a class="twitter" href="{text:Twitter URL}" title="Twitter">Twitter</a></li>{/block:ifTwitterURL}{block:ifDribbbleURL}<li><a class="dribbble" href="{text:Dribbble URL}" title="Dribbble">Dribbble</a></li>{/block:ifDribbbleURL}{block:ifBehanceURL}<li><a class="behance" href="{text:Behance URL}" title="Behance">Behance</a></li>{/block:ifBehanceURL}{block:ifLinkedInURL}<li><a class="linkedin" href="{text:LinkedIn URL}" title="LinkedIn">LinkedIn</a></li>{/block:ifLinkedInURL}{block:ifTumblrURL}<li><a class="tumblr" href="{text:Tumblr URL}" title="Tumblr">Tumblr</a></li>{/block:ifTumblrURL}{block:ifWordpressURL}<li><a class="wordpress" href="{text:Wordpress URL}" title="Wordpress">Wordpress</a></li>{/block:ifWordpressURL}{block:ifSoundcloudURL}<li><a class="soundcloud" href="{text:Soundcloud URL}" title="Soundcloud">Soundcloud</a></li>{/block:ifSoundcloudURL}{block:ifPinterestURL}<li><a class="pinterest" href="{text:Pinterest URL}" title="Pinterest">Pinterest</a></li>{/block:ifPinterestURL}{block:ifFlickrURL}<li><a class="flickr" href="{text:Flickr URL}" title="Flickr">Flickr</a></li>{/block:ifFlickrURL}{block:ifYoutubeURL}<li><a class="youtube" href="{text:Youtube URL}" title="Youtube">Youtube</a></li>{/block:ifYoutubeURL}{block:ifVimeoURL}<li><a class="vimeo" href="{text:Vimeo URL}" title="Vimeo">Vimeo</a></li>{/block:ifVimeoURL}</nav></section></div><div id="NS"><section>{block:iflogoimage}<a href="/"><img src="{image:Logo}" width="500" alt="{title}"></a>{/block:iflogoimage}{block:ifSidebarblogtitle}<h1><a href="/">{title}</a></h1>{/block:ifSidebarblogtitle}</section>{block:Description}<section><h2>Description</h2><div id="D">{Description}</div></section>{/block:Description}{block:ifshowfilterlist}{block:indexpage}<div id="cn_h"></div>{/block:indexpage}{/block:ifshowfilterlist}</div><div id="S"><a id="T">Back To Top <i>m</i></a>{block:ifnotshowfilterlist}<div id="cn_h"></div>{/block:ifnotshowfilterlist}{block:ifshowfilterlist}{block:PermalinkPage}<div id="cn_h"></div>{/block:PermalinkPage}{block:IndexPage}<section><h2>Filters</h2><nav id="F"><li class="active"><a data-filter=".X">all</a></li>{block:iffilter1title}<li><a data-filter=".tag-{text:Filter 1 Tag}">{text:Filter 1 Title}</a></li>{/block:iffilter1title}{block:iffilter2title}<li><a data-filter=".tag-{text:Filter 2 Tag}">{text:Filter 2 Title}</a></li>{/block:iffilter2title}{block:iffilter3title}<li><a data-filter=".tag-{text:Filter 3 Tag}">{text:Filter 3 Title}</a></li>{/block:iffilter3title}{block:iffilter4title}<li><a data-filter=".tag-{text:Filter 4 Tag}">{text:Filter 4 Title}</a></li>{/block:iffilter4title}{block:iffilter5title}<li><a data-filter=".tag-{text:Filter 5 Tag}">{text:Filter 5 Title}</a></li>{/block:iffilter5title}{block:iffilter6title}<li><a data-filter=".tag-{text:Filter 6 Tag}">{text:Filter 6 Title}</a></li>{/block:iffilter6title}{block:iffilter7title}<li><a data-filter=".tag-{text:Filter 7 Tag}">{text:Filter 7 Title}</a></li>{/block:iffilter7title}{block:iffilter8title}<li><a data-filter=".tag-{text:Filter 8 Tag}">{text:Filter 8 Title}</a></li>{/block:iffilter8title}{block:iffilter9title}<li><a data-filter=".tag-{text:Filter 9 Tag}">{text:Filter 9 Title}</a></li>{/block:iffilter9title}</nav></nav></section>{/block:IndexPage}{block:ifshowfilterlist}{block:ifshowcredit}<section id="CT">{block:ifnotcustomcredittext}©{CopyrightYears} {title}{/block:ifnotcustomcredittext}{block:ifcustomcredittext}{text:Custom Credit Text}{block:ifcustomcredittext}<br><a href="https://zen-themes.com/tumblr-themes/carter" target="_blank">Theme Carter</a> by <a href="https://zen-themes.com" target="_blank">Zen Themes</a></section>{/block:ifshowcredit}</div></aside>
+
+<section id="Z-C"><div id="Z">{block:Posts}<article id="{PostID}" class="X{block:Tags} tag-{URLSafeTag}{/block:Tags}">{block:Answer}<div class="t"><div class="t-q"><div class="bg">“</div><h3>{Question}</h3><i>by {Asker}</i></div>{answer}</div>{/block:Answer} {block:Chat}<div class="t t-c">{block:Title}<h2>{Title}</h2>{/block:Title} {block:Lines}<li>{block:Label}<b>{Label}</b>{/block:Label} {Line}</li>{/block:Lines}</div>{/block:Chat} {block:Link}<div class="t t-l"><h2><a href="{URL}">{Name} →</a></h2>{block:Description} {Description} {/block:Description}</div>{/block:Link} {block:Text}<div class="t">{block:Title}<h2>{Title}</h2>{/block:Title} {Body}</div>{/block:Text}{block:Quote}<div class="t t-q"><h3>{Quote}</h3><div class="source">— {Source}</div></div>{/block:Quote}{block:Photo}<div class="p">{block:indexpage} {block:ifnotphotohovereffect3} {block:ifnotphotohovereffect2} {block:ifphotohovereffect1}<div class="h_1"><a href="{permalink}">{NoteCountWithLabel}</a><a href="{permalink}">{Timeago}</a><a href="{ReblogURL}" target="_blank">Reblog</a><a class="z" href="{PhotoURL-HighRes}">Lightbox</a>{block:ContentSource}<a href="{SourceURL}">Source</a>{/block:ContentSource}</div>{/block:ifphotohovereffect1} {/block:ifnotphotohovereffect2} {/block:ifnotphotohovereffect3} {block:ifnotphotohovereffect3} {block:ifphotohovereffect2}<div class="h_2"><a class="z" href="{PhotoURL-HighRes}">v</a><a href="{ReblogURL}" target="_blank">z</a><a>{LikeButton size="14"}x</a></div>{/block:ifphotohovereffect2} {/block:ifnotphotohovereffect3} {block:ifphotohovereffect3}<div class="h_3"><li><i>Notes</i><a href="{permalink}">{NoteCount}</a></li><li class="b"><i>actions</i><a class="z" href="{PhotoURL-HighRes}">v</a><a href="{ReblogURL}" target="_blank">z</a><a>{LikeButton size="12"}x</a></li><li><i>Date</i><a href="{permalink}">{Month} {DayOfMonth}{DayOfMonthSuffix}</a></li><li><i>Time</i><a href="{permalink}">{24HourWithZero}:{Minutes}:{Seconds}</a>{block:ContentSource}<li><i>Source</i><a href="{SourceURL}">{SourceTitle}</a></li>{/block:ContentSource}<li></div>{/block:ifphotohovereffect3}<a class="G" href="{permalink}"></a><img src="{PhotoURL-500}" alt="{PhotoAlt}">{/block:indexpage} {block:permalinkpage} {LinkOpenTag}<img src="{PhotoURL-HighRes}"alt="{PhotoAlt}">{LinkCloseTag} {/block:permalinkpage}</div>{/block:Photo} {block:Photoset}<div class="p"><div class="pst" data-layout="{PhotosetLayout}" data-id="photoset{PostID}">{block:Photos}<a class="z" href="{PhotoURL-HighRes}"><img src="{PhotoURL-500}"{block:HighRes}data-highres="{PhotoURL-HighRes}"{/block:HighRes}{block:Caption}alt="{Caption}"{/block:caption}/></a>{/block:Photos}</div></div>{/block:Photoset} {block:Audio}<div class="m m-a">{block:IndexPage} {AudioEmbed-400} {/block:IndexPage} {block:permalinkpage} {AudioEmbed-640} {/block:permalinkpage}</div>{/block:Audio}{block:Video}<div class="m">{block:IndexPage} {VideoEmbed-400} {/block:IndexPage} {block:permalinkpage} {VideoEmbed-700} {/block:permalinkpage}</div>{/block:Video}<div{block:Photo} class="p-d"{/block:Photo}>{block:date}{block:permalinkpage} {block:Caption}<div class="c">{Caption}</div>{/block:Caption}{/block:permalinkpage}<div class="d">{block:indexpage}<a href="{permalink}">c</a>{/block:indexpage}{block:PermalinkPage}<a class="n-i">{NoteCountWithLabel}</a>{/block:PermalinkPage}<a href="{reblogURL}" target="_blank">z</a><a>{LikeButton size="15"}x</a></div>{/block:date}</div></article>{block:PermalinkPage}{block:date}{block:ifnothidepostnotes}{block:PostNotes}<div id="p-i">{PostNotes-64}</div>{/block:PostNotes}{/block:ifnothidepostnotes}{/block:date}{/block:PermalinkPage}{/block:Posts}</div>{block:Pagination}<footer id="PG"><div id="L"><div class="r-1"></div><div class="r-2"></div><div class="r-3"></div><div class="r-4"></div></div><nav>{block:PreviousPage}<a href="{PreviousPage}" id="newer">Prev Page</a>{/block:PreviousPage} {block:JumpPagination length="5"} {block:CurrentPage}<a id="current">{PageNumber}</a>{/block:CurrentPage} {block:JumpPage}<a href="{URL}">{PageNumber}</a>{/block:JumpPage} {/block:JumpPagination} {block:NextPage}<a href="{NextPage}" id="older">Next Page</a>{/block:NextPage}</nav></footer>{/block:Pagination}</section></div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script><script src="https://static.tumblr.com/j6tha7z/zvPo5lhzl/s.js"></script>
+
+</body>
+</html>
